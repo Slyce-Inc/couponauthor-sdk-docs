@@ -1,0 +1,4 @@
+# Formatting
+permalink:  /:categories/:title/index.html
+markdown: kramdown
+highlighter: pygments
