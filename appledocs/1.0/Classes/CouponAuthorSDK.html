@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>CouponAuthorSDK Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">CouponAuthorSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Slyce, Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/getBucketWithSource:andMedium:">+ getBucketWithSource:andMedium:</option>
+		
+		<option value="//api/name/startWithAppId:">+ startWithAppId:</option>
+		
+		<option value="//api/name/trackImpressionForCouponWithId:Source:Medium:">+ trackImpressionForCouponWithId:Source:Medium:</option>
+		
+		<option value="//api/name/trackImpressionsInBucketWithSource:andMedium:">+ trackImpressionsInBucketWithSource:andMedium:</option>
+		
+		<option value="//api/name/trackRedemptionForCouponWithId:ofType:Source:Medium:">+ trackRedemptionForCouponWithId:ofType:Source:Medium:</option>
+		
+		<option value="//api/name/trackViewForCouponWithId:Source:Medium:">+ trackViewForCouponWithId:Source:Medium:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">CouponAuthorSDK Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>CouponAuthorSDK.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This is the main class through which you can communicate with the Coupon Author SDK.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/startWithAppId:" title="startWithAppId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startWithAppId:">+&nbsp;startWithAppId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>You must call startWithAppId before you try to access a bucket of coupons or track any analytics.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)startWithAppId:(NSString *)<em>appId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appId</code></th>
+						<td><p>your Coupon Author app identifier from Slyce</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>You must call startWithAppId before you try to access a bucket of coupons or track any analytics.</p>
+
+<p>Add the following line to the bottom of the <strong>didFinishLaunchingWithOptions:</strong> method of your AppDelegate.</p>
+
+<p>[CouponAuthorSDK startWithAppId:@&ldquo;YOUR_APP_ID&rdquo;];</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CouponAuthorSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getBucketWithSource:andMedium:" title="getBucketWithSource:andMedium:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getBucketWithSource:andMedium:">+&nbsp;getBucketWithSource:andMedium:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the a bucket of coupons for a given source and medium</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (SSBucket *)getBucketWithSource:(NSString *)<em>source</em> andMedium:(NSString *)<em>medium</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>source</code></th>
+						<td><p>The source for these coupons</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>medium</code></th>
+						<td><p>The medium for these coupons</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the a bucket of coupons for a given source and medium</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CouponAuthorSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackImpressionForCouponWithId:Source:Medium:" title="trackImpressionForCouponWithId:Source:Medium:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackImpressionForCouponWithId:Source:Medium:">+&nbsp;trackImpressionForCouponWithId:Source:Medium:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to call when a user sees the coupon with the given Id</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)trackImpressionForCouponWithId:(NSInteger)<em>couponId</em> Source:(NSString *)<em>source</em> Medium:(NSString *)<em>medium</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>couponId</code></th>
+						<td><p>the coupon id that was shown. This should come from an <a href="../Classes/SSCoupon.html">SSCoupon</a> instance.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>source</code></th>
+						<td><p>The source to track this event for</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>medium</code></th>
+						<td><p>The medium to track this event for</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Method to call when a user sees the coupon with the given Id</p>
+
+<p>This event will be tracked under the given source and medium</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CouponAuthorSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackImpressionsInBucketWithSource:andMedium:" title="trackImpressionsInBucketWithSource:andMedium:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackImpressionsInBucketWithSource:andMedium:">+&nbsp;trackImpressionsInBucketWithSource:andMedium:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to call to track impressions for an entire bucket</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)trackImpressionsInBucketWithSource:(NSString *)<em>source</em> andMedium:(NSString *)<em>medium</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>source</code></th>
+						<td><p>The source to track these events for</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>medium</code></th>
+						<td><p>The medium to track these events for</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Method to call to track impressions for an entire bucket</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CouponAuthorSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackViewForCouponWithId:Source:Medium:" title="trackViewForCouponWithId:Source:Medium:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackViewForCouponWithId:Source:Medium:">+&nbsp;trackViewForCouponWithId:Source:Medium:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to call when a user taps the coupon with the given Id</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)trackViewForCouponWithId:(NSInteger)<em>couponId</em> Source:(NSString *)<em>source</em> Medium:(NSString *)<em>medium</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>couponId</code></th>
+						<td><p>the coupon id that was viewed. This should come from an <a href="../Classes/SSCoupon.html">SSCoupon</a> instance.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>source</code></th>
+						<td><p>The source to track this event for</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>medium</code></th>
+						<td><p>The medium to track this event for</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Method to call when a user taps the coupon with the given Id</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CouponAuthorSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackRedemptionForCouponWithId:ofType:Source:Medium:" title="trackRedemptionForCouponWithId:ofType:Source:Medium:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackRedemptionForCouponWithId:ofType:Source:Medium:">+&nbsp;trackRedemptionForCouponWithId:ofType:Source:Medium:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to call when a user snips a coupon to SnipSnap, Apple Wallet, or Google Wallet</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)trackRedemptionForCouponWithId:(NSInteger)<em>couponId</em> ofType:(SSRedemptionType)<em>redemptionType</em> Source:(NSString *)<em>source</em> Medium:(NSString *)<em>medium</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>couponId</code></th>
+						<td><p>the coupon id that was viewed. This should come from an <a href="../Classes/SSCoupon.html">SSCoupon</a> instance.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>redemptionType</code></th>
+						<td><p>the type of redemption completed by the user.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>source</code></th>
+						<td><p>The source to track this event for.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>medium</code></th>
+						<td><p>The medium to track this event for.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Method to call when a user snips a coupon to SnipSnap, Apple Wallet, or Google Wallet</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CouponAuthorSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Slyce, Inc. All rights reserved. Updated: 2015-08-25</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

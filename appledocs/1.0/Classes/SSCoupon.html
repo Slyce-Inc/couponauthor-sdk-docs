@@ -14,11 +14,11 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">SnipSnapSDK </a>
+				<a href="../index.html">CouponAuthorSDK </a>
 			</h1>
 
 			<p id="developer-home">
-				<a href="../index.html">SnipSnap</a>
+				<a href="../index.html">Slyce, Inc.</a>
 			</p>
 			
 		</div>
@@ -42,6 +42,8 @@
 
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
 	
 
 	
@@ -118,6 +120,14 @@
 					
 
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This model contains all the information for a Coupon Author coupon</p>
+					</div>
+					
+					
 
 					
 					
@@ -141,7 +151,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>The ID for the coupon</p>
+				<p>Unique identifier for this coupon</p>
 			</div>
 			
 		    
@@ -158,7 +168,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>The ID for the coupon</p>
+				<p>Unique identifier for this coupon</p>
 			</div>
 			
 
@@ -186,10 +196,6 @@
 		<div class="method-info-container">
 			
 			
-			<div class="method-subsection brief-description">
-				<p>The description for the coupon</p>
-			</div>
-			
 		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *couponDescription</code></div>
@@ -201,11 +207,6 @@
 
 			
 
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>The description for the coupon</p>
-			</div>
 			
 
 			
@@ -233,7 +234,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>The list of tiers for the coupon</p>
+				<p>Array of SSCouponTiers</p>
 			</div>
 			
 		    
@@ -250,7 +251,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>The list of tiers for the coupon</p>
+				<p>Array of SSCouponTiers</p>
 			</div>
 			
 
@@ -278,10 +279,6 @@
 		<div class="method-info-container">
 			
 			
-			<div class="method-subsection brief-description">
-				<p>The face value for the coupon</p>
-			</div>
-			
 		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *couponFaceValue</code></div>
@@ -293,11 +290,6 @@
 
 			
 
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>The face value for the coupon</p>
-			</div>
 			
 
 			
@@ -324,10 +316,6 @@
 		<div class="method-info-container">
 			
 			
-			<div class="method-subsection brief-description">
-				<p>The start date for the coupon</p>
-			</div>
-			
 		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDate *couponStartDate</code></div>
@@ -339,11 +327,6 @@
 
 			
 
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>The start date for the coupon</p>
-			</div>
 			
 
 			
@@ -370,10 +353,6 @@
 		<div class="method-info-container">
 			
 			
-			<div class="method-subsection brief-description">
-				<p>The expiration date for the coupon</p>
-			</div>
-			
 		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDate *couponExpirationDate</code></div>
@@ -385,11 +364,6 @@
 
 			
 
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>The expiration date for the coupon</p>
-			</div>
 			
 
 			
@@ -416,10 +390,6 @@
 		<div class="method-info-container">
 			
 			
-			<div class="method-subsection brief-description">
-				<p>The rules for the coupon</p>
-			</div>
-			
 		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *couponRules</code></div>
@@ -431,11 +401,6 @@
 
 			
 
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>The rules for the coupon</p>
-			</div>
 			
 
 			
@@ -462,10 +427,6 @@
 		<div class="method-info-container">
 			
 			
-			<div class="method-subsection brief-description">
-				<p>The terms for the coupon</p>
-			</div>
-			
 		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *couponTerms</code></div>
@@ -477,11 +438,6 @@
 
 			
 
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>The terms for the coupon</p>
-			</div>
 			
 
 			
@@ -509,7 +465,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>The product image for the coupon and its thumbnail</p>
+				<p>Array of NSURLs for the product images</p>
 			</div>
 			
 		    
@@ -526,7 +482,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>The product image for the coupon and its thumbnail</p>
+				<p>Array of NSURLs for the product images</p>
 			</div>
 			
 
@@ -555,7 +511,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>The image for the coupon and its thumbnail</p>
+				<p>Array of NSURLs for the coupon images</p>
 			</div>
 			
 		    
@@ -572,7 +528,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>The image for the coupon and its thumbnail</p>
+				<p>Array of NSURLs for the coupon images</p>
 			</div>
 			
 
@@ -600,10 +556,6 @@
 		<div class="method-info-container">
 			
 			
-			<div class="method-subsection brief-description">
-				<p>The advertiser logo for the coupon</p>
-			</div>
-			
 		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSURL *couponAdvertiserLogo</code></div>
@@ -615,11 +567,6 @@
 
 			
 
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>The advertiser logo for the coupon</p>
-			</div>
 			
 
 			
@@ -646,10 +593,6 @@
 		<div class="method-info-container">
 			
 			
-			<div class="method-subsection brief-description">
-				<p>The advertiser name for the coupon</p>
-			</div>
-			
 		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *couponAdvertiserName</code></div>
@@ -661,11 +604,6 @@
 
 			
 
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>The advertiser name for the coupon</p>
-			</div>
 			
 
 			
@@ -692,10 +630,6 @@
 		<div class="method-info-container">
 			
 			
-			<div class="method-subsection brief-description">
-				<p>The redeem url for the coupon</p>
-			</div>
-			
 		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSURL *couponRedeemUrl</code></div>
@@ -707,11 +641,6 @@
 
 			
 
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>The redeem url for the coupon</p>
-			</div>
 			
 
 			
@@ -739,7 +668,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>The Passbook link for the coupon if it is shareable to Passbook</p>
+				<p>Apple Wallet share url, if any</p>
 			</div>
 			
 		    
@@ -756,7 +685,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>The Passbook link for the coupon if it is shareable to Passbook</p>
+				<p>Apple Wallet share url, if any</p>
 			</div>
 			
 
@@ -785,7 +714,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>The Google Wallet link for the coupon if it is shareable to Google Wallet</p>
+				<p>Google Wallet share url, if any</p>
 			</div>
 			
 		    
@@ -802,7 +731,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>The Google Wallet link for the coupon if it is shareable to Google Wallet</p>
+				<p>Google Wallet share url, if any</p>
 			</div>
 			
 
@@ -834,7 +763,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 SnipSnap. All rights reserved. Updated: 2015-08-21</p>
+						<p class="copyright">Copyright &copy; 2015 Slyce, Inc. All rights reserved. Updated: 2015-08-25</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
